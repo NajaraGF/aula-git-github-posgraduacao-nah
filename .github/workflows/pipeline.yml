@@ -24,3 +24,9 @@ jobs:
 
       - name: Executar arquivo JavaScript
         run: node login.js
+
+      - name: Armazenar artefato do projeto
+        uses: actions/upload-artifact@v4
+        with:
+          name: login-js
+          path: login.js
